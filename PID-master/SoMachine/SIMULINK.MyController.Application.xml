@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.3.50</Version>
+    <SymbolConfigObject version="3.5.3.50" />
+    <ProjectInfo name="SIMULINK" devicename="MyController" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_REAL" size="4" swapsize="4" typeclass="Real" iecname="REAL" />
+    <TypeUserDef name="T_stPmtsNew_Easy" size="16" nativesize="16" typeclass="Userdef" iecname="stPmtsNew_Easy">
+      <UserDefElement type="T_REAL" iecname="rKp" byteoffset="0" />
+      <UserDefElement type="T_REAL" iecname="rTn" byteoffset="4" />
+      <UserDefElement type="T_REAL" iecname="rTv" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="rTd" byteoffset="12" />
+    </TypeUserDef>
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeUserDef name="T_stTempCtrl_Easy" size="36" nativesize="36" typeclass="Userdef" iecname="stTempCtrl_Easy">
+      <UserDefElement type="T_BOOL" iecname="xHold" byteoffset="0" />
+      <UserDefElement type="T_REAL" iecname="rHighLim" byteoffset="4" />
+      <UserDefElement type="T_REAL" iecname="rLowLim" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="rDbnd" byteoffset="12" />
+      <UserDefElement type="T_BOOL" iecname="xAttn" byteoffset="16" />
+      <UserDefElement type="T_REAL" iecname="rPwmTimePeriod" byteoffset="20" />
+      <UserDefElement type="T_REAL" iecname="rSpHigh" byteoffset="24" />
+      <UserDefElement type="T_REAL" iecname="rSpLow" byteoffset="28" />
+      <UserDefElement type="T_REAL" iecname="rFltrTime" byteoffset="32" />
+    </TypeUserDef>
+    <TypeSimple name="T_STRING" size="81" swapsize="0" typeclass="String" iecname="STRING" />
+    <TypeSimple name="T_UINT" size="2" swapsize="2" typeclass="UInt" iecname="UINT" />
+    <TypeArray name="T_ARRAY__0__4__OF_stPmtsNew_Easy" size="80" nativesize="80" typeclass="Array" iecname="ARRAY [0..4] OF stPmtsNew_Easy" basetype="T_stPmtsNew_Easy">
+      <ArrayDim minrange="0" maxrange="4" />
+    </TypeArray>
+    <TypeSimple name="T_UDINT" size="4" swapsize="4" typeclass="UDInt" iecname="UDINT" />
+    <TypeUserDef name="T_Standard_R_TRIG" size="8" nativesize="8" typeclass="Userdef" iecname="Standard.R_TRIG">
+      <UserDefElement type="T_BOOL" iecname="CLK" byteoffset="4" />
+      <UserDefElement type="T_BOOL" iecname="Q" byteoffset="5" />
+    </TypeUserDef>
+    <TypeUserDef name="T_stPid" size="28" nativesize="28" typeclass="Userdef" iecname="stPid">
+      <UserDefElement type="T_BOOL" iecname="xActValType" byteoffset="0" />
+      <UserDefElement type="T_REAL" iecname="rDbnd" byteoffset="4" />
+      <UserDefElement type="T_REAL" iecname="rTargCyclTime" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="rLowLim" byteoffset="12" />
+      <UserDefElement type="T_REAL" iecname="rHighLim" byteoffset="16" />
+      <UserDefElement type="T_REAL" iecname="rInerWndo" byteoffset="20" />
+      <UserDefElement type="T_REAL" iecname="rOterWndo" byteoffset="24" />
+    </TypeUserDef>
+    <TypeUserDef name="T_R_TRIG" size="8" nativesize="8" typeclass="Userdef" iecname="R_TRIG">
+      <UserDefElement type="T_BOOL" iecname="CLK" byteoffset="4" />
+      <UserDefElement type="T_BOOL" iecname="Q" byteoffset="5" />
+    </TypeUserDef>
+    <TypeUserDef name="T_SE_TBX_FB_PID" size="376" nativesize="376" typeclass="Userdef" iecname="SE_TBX.FB_PID">
+      <UserDefElement type="T_BOOL" iecname="i_xEn" byteoffset="4" />
+      <UserDefElement type="T_REAL" iecname="i_rSp" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="i_rPv1" byteoffset="12" />
+      <UserDefElement type="T_INT" iecname="i_iPv2" byteoffset="16" />
+      <UserDefElement type="T_BOOL" iecname="i_xHold" byteoffset="18" />
+      <UserDefElement type="T_REAL" iecname="i_rKp" byteoffset="20" />
+      <UserDefElement type="T_REAL" iecname="i_rTn" byteoffset="24" />
+      <UserDefElement type="T_REAL" iecname="i_rTv" byteoffset="28" />
+      <UserDefElement type="T_REAL" iecname="i_rTd" byteoffset="32" />
+      <UserDefElement type="T_BOOL" iecname="i_xManMode" byteoffset="36" />
+      <UserDefElement type="T_REAL" iecname="i_rManVal" byteoffset="40" />
+      <UserDefElement type="T_stPid" iecname="i_stPid" byteoffset="44" />
+      <UserDefElement type="T_BOOL" iecname="i_xErrRst" byteoffset="72" />
+      <UserDefElement type="T_BOOL" iecname="q_xEn" byteoffset="73" />
+      <UserDefElement type="T_BOOL" iecname="q_xBusy" byteoffset="74" />
+      <UserDefElement type="T_REAL" iecname="q_rPidOput" byteoffset="76" />
+      <UserDefElement type="T_BOOL" iecname="q_xMinLimActv" byteoffset="80" />
+      <UserDefElement type="T_BOOL" iecname="q_xMaxLimActv" byteoffset="81" />
+      <UserDefElement type="T_BOOL" iecname="q_xARWActv" byteoffset="82" />
+      <UserDefElement type="T_BOOL" iecname="q_xErr" byteoffset="83" />
+      <UserDefElement type="T_UINT" iecname="q_uiErrId" byteoffset="84" />
+      <UserDefElement type="T_STRING" iecname="q_sErrMsge" byteoffset="86" />
+      <UserDefElement type="T_STRING" iecname="q_sFBstat" byteoffset="167" />
+      <UserDefElement type="T_BOOL" iecname="xOldEn" byteoffset="248" />
+      <UserDefElement type="T_BOOL" iecname="xParaOk" byteoffset="249" />
+      <UserDefElement type="T_BOOL" iecname="xParaChg" byteoffset="250" />
+      <UserDefElement type="T_BOOL" iecname="xIsIPart" byteoffset="251" />
+      <UserDefElement type="T_BOOL" iecname="xIsDPart" byteoffset="252" />
+      <UserDefElement type="T_BOOL" iecname="xRstDPart" byteoffset="253" />
+      <UserDefElement type="T_BOOL" iecname="xChkOff" byteoffset="254" />
+      <UserDefElement type="T_BOOL" iecname="xHoldIntTerm" byteoffset="255" />
+      <UserDefElement type="T_BOOL" iecname="xOldErr" byteoffset="256" />
+      <UserDefElement type="T_BOOL" iecname="xActValType" byteoffset="257" />
+      <UserDefElement type="T_UINT" iecname="uiSta" byteoffset="258" />
+      <UserDefElement type="T_UINT" iecname="uiErrId" byteoffset="260" />
+      <UserDefElement type="T_REAL" iecname="rActPrcsVal" byteoffset="264" />
+      <UserDefElement type="T_REAL" iecname="rKp" byteoffset="268" />
+      <UserDefElement type="T_REAL" iecname="rTn" byteoffset="272" />
+      <UserDefElement type="T_REAL" iecname="rTv" byteoffset="276" />
+      <UserDefElement type="T_REAL" iecname="rTd" byteoffset="280" />
+      <UserDefElement type="T_REAL" iecname="rHighLim" byteoffset="284" />
+      <UserDefElement type="T_REAL" iecname="rLowLim" byteoffset="288" />
+      <UserDefElement type="T_REAL" iecname="rOputPropTerm" byteoffset="292" />
+      <UserDefElement type="T_REAL" iecname="rOputIntTerm" byteoffset="296" />
+      <UserDefElement type="T_REAL" iecname="rOputDervTerm" byteoffset="300" />
+      <UserDefElement type="T_REAL" iecname="rOputPid" byteoffset="304" />
+      <UserDefElement type="T_REAL" iecname="rErr" byteoffset="308" />
+      <UserDefElement type="T_REAL" iecname="rOputIntTerm_1" byteoffset="312" />
+      <UserDefElement type="T_REAL" iecname="rOputDervTerm_1" byteoffset="316" />
+      <UserDefElement type="T_REAL" iecname="rOputPid_1" byteoffset="320" />
+      <UserDefElement type="T_REAL" iecname="rErr_1" byteoffset="324" />
+      <UserDefElement type="T_REAL" iecname="rIntmDervOput2nd" byteoffset="328" />
+      <UserDefElement type="T_REAL" iecname="rIntmDervOput1st" byteoffset="332" />
+      <UserDefElement type="T_REAL" iecname="rIntmIntOputTerm" byteoffset="336" />
+      <UserDefElement type="T_REAL" iecname="rIntmIntFact" byteoffset="340" />
+      <UserDefElement type="T_REAL" iecname="rHalfTargCyclTime" byteoffset="344" />
+      <UserDefElement type="T_REAL" iecname="rTargCyclTime" byteoffset="348" />
+      <UserDefElement type="T_REAL" iecname="rInerIntWndo" byteoffset="352" />
+      <UserDefElement type="T_REAL" iecname="rOterIntWndo" byteoffset="356" />
+      <UserDefElement type="T_REAL" iecname="rDbnd" byteoffset="360" />
+      <UserDefElement type="T_REAL" iecname="rPidHoldVal" byteoffset="364" />
+      <UserDefElement type="T_R_TRIG" iecname="RstRTrig" byteoffset="368" />
+    </TypeUserDef>
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeUserDef name="T_Standard_TON" size="28" nativesize="28" typeclass="Userdef" iecname="Standard.TON">
+      <UserDefElement type="T_BOOL" iecname="IN" byteoffset="4" />
+      <UserDefElement type="T_TIME" iecname="PT" byteoffset="8" />
+      <UserDefElement type="T_BOOL" iecname="Q" byteoffset="12" />
+      <UserDefElement type="T_TIME" iecname="ET" byteoffset="16" />
+    </TypeUserDef>
+    <TypeUserDef name="T_PWM_Easy" size="76" nativesize="76" typeclass="Userdef" iecname="PWM_Easy">
+      <UserDefElement type="T_BOOL" iecname="i_xEn" byteoffset="4" />
+      <UserDefElement type="T_REAL" iecname="i_rPidMv" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="i_rPidValMax" byteoffset="12" />
+      <UserDefElement type="T_REAL" iecname="i_rPidValMin" byteoffset="16" />
+      <UserDefElement type="T_REAL" iecname="i_rPwmTimePeriod" byteoffset="20" />
+      <UserDefElement type="T_BOOL" iecname="q_xPwm" byteoffset="24" />
+      <UserDefElement type="T_BOOL" iecname="xEn" byteoffset="25" />
+      <UserDefElement type="T_REAL" iecname="rPidValRange" byteoffset="28" />
+      <UserDefElement type="T_TIME" iecname="tPwmTimePeriod" byteoffset="32" />
+      <UserDefElement type="T_TIME" iecname="tPwmTimeOnAct" byteoffset="36" />
+      <UserDefElement type="T_Standard_TON" iecname="Tmr" byteoffset="40" />
+    </TypeUserDef>
+    <TypeSimple name="T_STRING_INT_35_" size="36" swapsize="0" typeclass="String" iecname="STRING(INT#35)" />
+    <TypeUserDef name="T_Standard_F_TRIG" size="8" nativesize="8" typeclass="Userdef" iecname="Standard.F_TRIG">
+      <UserDefElement type="T_BOOL" iecname="CLK" byteoffset="4" />
+      <UserDefElement type="T_BOOL" iecname="Q" byteoffset="5" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__1__4__OF_REAL" size="16" nativesize="16" typeclass="Array" iecname="ARRAY [1..4] OF REAL" basetype="T_REAL">
+      <ArrayDim minrange="1" maxrange="4" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__1__4__OF_TIME" size="16" nativesize="16" typeclass="Array" iecname="ARRAY [1..4] OF TIME" basetype="T_TIME">
+      <ArrayDim minrange="1" maxrange="4" />
+    </TypeArray>
+    <TypeSimple name="T_DINT" size="4" swapsize="4" typeclass="DInt" iecname="DINT" />
+    <TypeUserDef name="T_Util_STATISTICS_REAL" size="28" nativesize="28" typeclass="Userdef" iecname="Util.STATISTICS_REAL">
+      <UserDefElement type="T_REAL" iecname="IN" byteoffset="4" />
+      <UserDefElement type="T_BOOL" iecname="RESET" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="MN" byteoffset="12" />
+      <UserDefElement type="T_REAL" iecname="MX" byteoffset="16" />
+      <UserDefElement type="T_REAL" iecname="AVG" byteoffset="20" />
+      <UserDefElement type="T_DINT" iecname="COUNTER" byteoffset="24" />
+    </TypeUserDef>
+    <TypeUserDef name="T_AutoTuning_Easy" size="412" nativesize="412" typeclass="Userdef" iecname="AutoTuning_Easy">
+      <UserDefElement type="T_BOOL" iecname="i_xEn" byteoffset="4" />
+      <UserDefElement type="T_BOOL" iecname="i_xExe" byteoffset="5" />
+      <UserDefElement type="T_REAL" iecname="i_rSp" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="i_rPrcsVal" byteoffset="12" />
+      <UserDefElement type="T_REAL" iecname="i_rTargCyclTime" byteoffset="16" />
+      <UserDefElement type="T_REAL" iecname="i_rHighLimPID" byteoffset="20" />
+      <UserDefElement type="T_REAL" iecname="i_rLowLimPID" byteoffset="24" />
+      <UserDefElement type="T_stPmtsNew_Easy" iecname="i_stManPara" byteoffset="28" />
+      <UserDefElement type="T_INT" iecname="i_iCtrlMode" byteoffset="44" />
+      <UserDefElement type="T_BOOL" iecname="q_xEn" byteoffset="46" />
+      <UserDefElement type="T_BOOL" iecname="q_xOput" byteoffset="47" />
+      <UserDefElement type="T_INT" iecname="q_iAttnStat" byteoffset="48" />
+      <UserDefElement type="T_STRING_INT_35_" iecname="q_sAttnStat" byteoffset="50" />
+      <UserDefElement type="T_ARRAY__0__4__OF_stPmtsNew_Easy" iecname="q_astPidPara" byteoffset="88" />
+      <UserDefElement type="T_INT" iecname="i" byteoffset="168" />
+      <UserDefElement type="T_BOOL" iecname="xEn" byteoffset="170" />
+      <UserDefElement type="T_Standard_R_TRIG" iecname="R_TRIG_xOut" byteoffset="172" />
+      <UserDefElement type="T_Standard_F_TRIG" iecname="F_TRIG_xOut" byteoffset="180" />
+      <UserDefElement type="T_Standard_R_TRIG" iecname="R_TRIG_Cyc1" byteoffset="188" />
+      <UserDefElement type="T_Standard_R_TRIG" iecname="R_TRIG_En" byteoffset="196" />
+      <UserDefElement type="T_ARRAY__1__4__OF_REAL" iecname="arMax" byteoffset="204" />
+      <UserDefElement type="T_ARRAY__1__4__OF_REAL" iecname="arMin" byteoffset="220" />
+      <UserDefElement type="T_ARRAY__1__4__OF_TIME" iecname="atTime" byteoffset="236" />
+      <UserDefElement type="T_TIME" iecname="tTime1" byteoffset="252" />
+      <UserDefElement type="T_TIME" iecname="tTime2" byteoffset="256" />
+      <UserDefElement type="T_TIME" iecname="tTime3" byteoffset="260" />
+      <UserDefElement type="T_REAL" iecname="rKs" byteoffset="264" />
+      <UserDefElement type="T_REAL" iecname="rTime1" byteoffset="268" />
+      <UserDefElement type="T_REAL" iecname="rTime2" byteoffset="272" />
+      <UserDefElement type="T_REAL" iecname="rTime3" byteoffset="276" />
+      <UserDefElement type="T_REAL" iecname="rTime4" byteoffset="280" />
+      <UserDefElement type="T_REAL" iecname="rSpHys" byteoffset="284" />
+      <UserDefElement type="T_Util_STATISTICS_REAL" iecname="STATISTICS_REAL01" byteoffset="288" />
+      <UserDefElement type="T_Standard_TON" iecname="TON01" byteoffset="316" />
+      <UserDefElement type="T_Standard_TON" iecname="TON_slope" byteoffset="344" />
+      <UserDefElement type="T_Standard_TON" iecname="TON2" byteoffset="372" />
+      <UserDefElement type="T_REAL" iecname="a" byteoffset="400" />
+      <UserDefElement type="T_REAL" iecname="b" byteoffset="404" />
+      <UserDefElement type="T_BOOL" iecname="xAttInit" byteoffset="408" />
+    </TypeUserDef>
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeUserDef name="T_DigitalFilter" size="36" nativesize="36" typeclass="Userdef" iecname="DigitalFilter">
+      <UserDefElement type="T_BOOL" iecname="i_xEn" byteoffset="4" />
+      <UserDefElement type="T_REAL" iecname="i_rPv" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="i_rFltrTime" byteoffset="12" />
+      <UserDefElement type="T_REAL" iecname="i_rCnst" byteoffset="16" />
+      <UserDefElement type="T_REAL" iecname="q_rMv" byteoffset="20" />
+      <UserDefElement type="T_BOOL" iecname="xinit" byteoffset="24" />
+      <UserDefElement type="T_BOOL" iecname="xOldEn" byteoffset="25" />
+      <UserDefElement type="T_DWORD" iecname="dwTimeLast" byteoffset="28" />
+      <UserDefElement type="T_DWORD" iecname="dwTimeCurr" byteoffset="32" />
+    </TypeUserDef>
+    <TypeUserDef name="T_TemperatureControl_Easy" size="1428" nativesize="1428" typeclass="Userdef" iecname="TemperatureControl_Easy">
+      <UserDefElement type="T_stPmtsNew_Easy" iecname="iq_stPid" byteoffset="4" />
+      <UserDefElement type="T_INT" iecname="iq_iCtrlMode" byteoffset="20" />
+      <UserDefElement type="T_BOOL" iecname="i_xEn" byteoffset="22" />
+      <UserDefElement type="T_REAL" iecname="i_rSp" byteoffset="23" />
+      <UserDefElement type="T_REAL" iecname="i_rPv" byteoffset="27" />
+      <UserDefElement type="T_BOOL" iecname="i_xManMode" byteoffset="31" />
+      <UserDefElement type="T_REAL" iecname="i_rManVal" byteoffset="32" />
+      <UserDefElement type="T_BOOL" iecname="i_xRst" byteoffset="36" />
+      <UserDefElement type="T_stTempCtrl_Easy" iecname="i_stTempCtrlPara" byteoffset="37" />
+      <UserDefElement type="T_BOOL" iecname="q_xEn" byteoffset="73" />
+      <UserDefElement type="T_REAL" iecname="q_rAna" byteoffset="76" />
+      <UserDefElement type="T_BOOL" iecname="q_xPwm" byteoffset="80" />
+      <UserDefElement type="T_BOOL" iecname="q_xAttnEn" byteoffset="81" />
+      <UserDefElement type="T_INT" iecname="q_iAttnStat" byteoffset="82" />
+      <UserDefElement type="T_STRING" iecname="q_sAttnStat" byteoffset="84" />
+      <UserDefElement type="T_BOOL" iecname="q_xAlrm" byteoffset="165" />
+      <UserDefElement type="T_UINT" iecname="q_uiAlrmId" byteoffset="166" />
+      <UserDefElement type="T_STRING" iecname="q_sAlrmMsge" byteoffset="168" />
+      <UserDefElement type="T_BOOL" iecname="q_xAlrt" byteoffset="249" />
+      <UserDefElement type="T_UINT" iecname="q_uiAlrtId" byteoffset="250" />
+      <UserDefElement type="T_STRING" iecname="q_sAlrtMsge" byteoffset="252" />
+      <UserDefElement type="T_ARRAY__0__4__OF_stPmtsNew_Easy" iecname="q_astPidPara" byteoffset="336" />
+      <UserDefElement type="T_BOOL" iecname="xOldEn" byteoffset="416" />
+      <UserDefElement type="T_BOOL" iecname="xIntModeMan" byteoffset="417" />
+      <UserDefElement type="T_BOOL" iecname="xSetCtrlModeAttn" byteoffset="419" />
+      <UserDefElement type="T_BOOL" iecname="xAttnCtrlMode1a" byteoffset="420" />
+      <UserDefElement type="T_BOOL" iecname="xAttnCtrlMode1b" byteoffset="421" />
+      <UserDefElement type="T_BOOL" iecname="xStartSysTime" byteoffset="422" />
+      <UserDefElement type="T_BOOL" iecname="xStartSysTimeOld" byteoffset="423" />
+      <UserDefElement type="T_REAL" iecname="rPv" byteoffset="424" />
+      <UserDefElement type="T_REAL" iecname="rManVal" byteoffset="428" />
+      <UserDefElement type="T_REAL" iecname="rTargetCycleTime" byteoffset="432" />
+      <UserDefElement type="T_REAL" iecname="rTargetCycleTimeOld" byteoffset="436" />
+      <UserDefElement type="T_UDINT" iecname="udiDiffSystime" byteoffset="440" />
+      <UserDefElement type="T_UDINT" iecname="udiSystime" byteoffset="444" />
+      <UserDefElement type="T_UDINT" iecname="udiSystimeOld" byteoffset="448" />
+      <UserDefElement type="T_Standard_R_TRIG" iecname="RstRtrig" byteoffset="452" />
+      <UserDefElement type="T_Standard_R_TRIG" iecname="AttnRtrig" byteoffset="460" />
+      <UserDefElement type="T_Standard_R_TRIG" iecname="AttnRtrig1" byteoffset="468" />
+      <UserDefElement type="T_stPid" iecname="stPIDIntPmts" byteoffset="476" />
+      <UserDefElement type="T_SE_TBX_FB_PID" iecname="FB_PID1" byteoffset="504" />
+      <UserDefElement type="T_PWM_Easy" iecname="PWM_Easy1" byteoffset="880" />
+      <UserDefElement type="T_AutoTuning_Easy" iecname="AutoTuning_Easy1" byteoffset="956" />
+      <UserDefElement type="T_DigitalFilter" iecname="DigitalFilter1" byteoffset="1368" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__0__3__OF_REAL" size="16" nativesize="16" typeclass="Array" iecname="ARRAY [0..3] OF REAL" basetype="T_REAL">
+      <ArrayDim minrange="0" maxrange="3" />
+    </TypeArray>
+    <TypeUserDef name="T_PIDStructMem" size="80" nativesize="80" typeclass="Userdef" iecname="PIDStructMem">
+      <UserDefElement type="T_REAL" iecname="P" byteoffset="0" />
+      <UserDefElement type="T_REAL" iecname="I" byteoffset="4" />
+      <UserDefElement type="T_REAL" iecname="D" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="CT" byteoffset="12" />
+      <UserDefElement type="T_REAL" iecname="P_AT" byteoffset="16" />
+      <UserDefElement type="T_REAL" iecname="I_AT" byteoffset="20" />
+      <UserDefElement type="T_REAL" iecname="D_AT" byteoffset="24" />
+      <UserDefElement type="T_REAL" iecname="CT_AT" byteoffset="28" />
+      <UserDefElement type="T_INT" iecname="CtrlMode" byteoffset="32" />
+      <UserDefElement type="T_REAL" iecname="TemperatureSpMax" byteoffset="36" />
+      <UserDefElement type="T_REAL" iecname="TemperatureSpMin" byteoffset="40" />
+      <UserDefElement type="T_ARRAY__0__3__OF_REAL" iecname="AutotunningPID" byteoffset="44" />
+      <UserDefElement type="T_REAL" iecname="PV" byteoffset="60" />
+      <UserDefElement type="T_REAL" iecname="SP" byteoffset="64" />
+      <UserDefElement type="T_REAL" iecname="TemperatureSetValue" byteoffset="68" />
+      <UserDefElement type="T_REAL" iecname="TemperatureSetValueMax" byteoffset="72" />
+      <UserDefElement type="T_REAL" iecname="TemperatureSetValueMin" byteoffset="76" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ValveStructMem" size="20" nativesize="20" typeclass="Userdef" iecname="ValveStructMem">
+      <UserDefElement type="T_REAL" iecname="ValueMax" byteoffset="0" />
+      <UserDefElement type="T_REAL" iecname="ValueMin" byteoffset="4" />
+      <UserDefElement type="T_REAL" iecname="SetValue" byteoffset="8" />
+      <UserDefElement type="T_REAL" iecname="OutputValuePercent" byteoffset="12" />
+      <UserDefElement type="T_INT" iecname="PWM_Output" byteoffset="16" />
+    </TypeUserDef>
+    <TypeSimple name="T_USINT" size="1" swapsize="1" typeclass="USInt" iecname="USINT" />
+    <TypeUserDef name="T_PIDStruct" size="28" nativesize="28" typeclass="Userdef" iecname="PIDStruct">
+      <UserDefElement type="T_BOOL" iecname="AlarmState" byteoffset="0" />
+      <UserDefElement type="T_USINT" iecname="AlarmId" byteoffset="1" />
+      <UserDefElement type="T_BOOL" iecname="AlertState" byteoffset="2" />
+      <UserDefElement type="T_USINT" iecname="AlertId" byteoffset="3" />
+      <UserDefElement type="T_BOOL" iecname="EnablePID" byteoffset="4" />
+      <UserDefElement type="T_BOOL" iecname="EnableState" byteoffset="5" />
+      <UserDefElement type="T_BOOL" iecname="AutotuneState" byteoffset="6" />
+      <UserDefElement type="T_USINT" iecname="AutotuneStateId" byteoffset="7" />
+      <UserDefElement type="T_R_TRIG" iecname="AutotuneStateWas" byteoffset="8" />
+      <UserDefElement type="T_BOOL" iecname="ErrorState" byteoffset="16" />
+      <UserDefElement type="T_BOOL" iecname="WarningState" byteoffset="17" />
+      <UserDefElement type="T_BOOL" iecname="ManMode" byteoffset="18" />
+      <UserDefElement type="T_BOOL" iecname="AutoTunningButton" byteoffset="19" />
+      <UserDefElement type="T_REAL" iecname="OutputValue" byteoffset="20" />
+      <UserDefElement type="T_BOOL" iecname="HoldOn" byteoffset="24" />
+    </TypeUserDef>
+    <TypeUserDef name="T_RS" size="8" nativesize="8" typeclass="Userdef" iecname="RS">
+      <UserDefElement type="T_BOOL" iecname="SET" byteoffset="4" />
+      <UserDefElement type="T_BOOL" iecname="RESET1" byteoffset="5" />
+      <UserDefElement type="T_BOOL" iecname="Q1" byteoffset="6" />
+    </TypeUserDef>
+    <TypeUserDef name="T_InterfaceStruct" size="20" nativesize="20" typeclass="Userdef" iecname="InterfaceStruct">
+      <UserDefElement type="T_BOOL" iecname="AutoButton" byteoffset="0" />
+      <UserDefElement type="T_BOOL" iecname="ManButton" byteoffset="1" />
+      <UserDefElement type="T_BOOL" iecname="ErrorResetButton" byteoffset="2" />
+      <UserDefElement type="T_RS" iecname="PushAuto" byteoffset="4" />
+      <UserDefElement type="T_RS" iecname="PushMan" byteoffset="12" />
+    </TypeUserDef>
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="GVL">
+        <Node name="Menu" type="T_InterfaceStruct" access="ReadWrite">
+          <Comment> Интерфейс меню, кнопки и пр</Comment>
+        </Node>
+        <Node name="PID" type="T_PIDStruct" access="ReadWrite">
+          <Comment> Все что связано с регулятором</Comment>
+        </Node>
+      </Node>
+      <Node name="PERSISTENTVARS">
+        <Node name="PIDMem" type="T_PIDStructMem" access="ReadWrite">
+          <Comment>ПИД-регулятор и все что необходимо хранить в памяти ПЛК</Comment>
+        </Node>
+        <Node name="ValveMem" type="T_ValveStructMem" access="ReadWrite" />
+      </Node>
+      <Node name="PIDAUTOTUNNING">
+        <Node name="CtrlModeLocal" type="T_INT" access="ReadWrite" />
+        <Node name="PIDPar" type="T_stPmtsNew_Easy" access="ReadWrite">
+          <Comment> Перезаписываемая структура ПИД</Comment>
+        </Node>
+        <Node name="PIDParametrs" type="T_ARRAY__0__4__OF_stPmtsNew_Easy" access="ReadWrite">
+          <Comment> ПИД коеф структура 4 возможных комбинаций</Comment>
+        </Node>
+        <Node name="PIDParametrs1" type="T_stPmtsNew_Easy" access="ReadWrite">
+          <Comment> ПИД коеф структура 4 возможных комбинаций</Comment>
+        </Node>
+        <Node name="PIDParametrs2" type="T_stPmtsNew_Easy" access="ReadWrite">
+          <Comment> ПИД коеф структура 4 возможных комбинаций</Comment>
+        </Node>
+        <Node name="PIDParametrs3" type="T_stPmtsNew_Easy" access="ReadWrite">
+          <Comment> ПИД коеф структура 4 возможных комбинаций</Comment>
+        </Node>
+        <Node name="PIDParametrs4" type="T_stPmtsNew_Easy" access="ReadWrite">
+          <Comment> ПИД коеф структура 4 возможных комбинаций</Comment>
+        </Node>
+        <Node name="PIDTunning" type="T_TemperatureControl_Easy" access="ReadWrite">
+          <Comment> Функция ПИД с автонастройкой </Comment>
+        </Node>
+        <Node name="ProcessParam" type="T_stTempCtrl_Easy" access="ReadWrite">
+          <Comment> Параметры процесса регулирования </Comment>
+        </Node>
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
